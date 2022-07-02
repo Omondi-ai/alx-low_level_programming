@@ -1,1 +1,1 @@
-Hello world for c
+Hello c
