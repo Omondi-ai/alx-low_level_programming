@@ -23,7 +23,7 @@ int main(void)
 					putchar(k);
 					putchar(j);
 
-				if (b + i + k + j == 227 && c == 57)
+				if (b + i + k + j == 227 && b == 57)
 				{
 				break;
 				}
