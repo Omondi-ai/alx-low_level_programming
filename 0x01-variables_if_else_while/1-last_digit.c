@@ -1,6 +1,5 @@
 #include <stdlin.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
  * main - Prints a text according number
