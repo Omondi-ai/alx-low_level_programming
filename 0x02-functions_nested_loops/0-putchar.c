@@ -1,16 +1,20 @@
 #include <stdio.h>
-#include <main.h>
-
+#include "main.h"
 /**
- * main - This program prints putchar
+ * main -Entry point
  *
- * return (0) is success
+ * Rerurn: 0
  */
 int main(void)
 {
-	_putchar(char '_', 'p', 'u', 't', 'c', 'h', 'a', 'r', \n);
-	{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+
 		return (0);
-	}
-	return (0);
 }
