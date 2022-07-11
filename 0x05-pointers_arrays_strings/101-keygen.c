@@ -14,12 +14,12 @@ int main(void)
 
 	srand(time(0));
 	while (x <= 4567)
-		{
-			c = rand() % 264;
-			x += c;
+	{
+		c = rand() % 264;
+		x += c;
 
-			putchar(c);
-		}
+		putchar(c);
+	}
 
 		putchar(5643 - x);
 
