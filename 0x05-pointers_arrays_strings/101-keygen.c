@@ -18,10 +18,10 @@ int main(void)
 		c = rand() % 264;
 		x += c;
 
-		putchar(c);
+		_putchar(c);
 	}
 
-		putchar(5643 - x);
+		_putchar(5643 - x);
 
 		return (0);
 }
