@@ -9,10 +9,27 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *pointer;
+	int k;
+	int j;
 
-	_strncat(dest, src);
-	pointer = dest;
+	k = 0;
+
+	for (j = 0; j < 1000; j++)
+	{
+		if (dest[j] == '\0')
+		{
+			break;
+		}
+
+		k++;
+	}
+
+	for (j = 0; src[j] != '\0' && j < n; j++)
+	{
+		dest[k + j] = src[j];
+	}
+
+	dest[k + j] = '\0';
 
 	return (dest);
 }
