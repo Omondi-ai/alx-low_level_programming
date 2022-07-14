@@ -6,22 +6,27 @@
  */
 char *cap_string(char *s)
 {
-	int i, j;
-	char delimiters[] = " \t\n,;.!?\"(){}";
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	i = 0;
+	while (s[i] != '\0')
 
-		if (s[0] >= 97 && s[0] <= 122)
+	{
+		if (s[0] >= 'a' && s[0] <= 'z')
 		{
 			s[0] = s[0] - 32;
 		}
-
-	for (j = 0; delimiters[j] != '\0'; j++)
-	{
-		if (s[i] == delimiters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
+		if (s[i] == ' ' || s[i] == '.' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
+				|| s[i] == ';' || s[i] == '!' || s[i] == '?' || s[i] == '('
+				|| s[i] == ')' || s[i] == '{' || s[i] == '}')
 		{
-			s[i + 1] = s[i + 1] - 32;
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			{
+				s[i + 1} = s[i + 1] - 32;
+			}
 		}
+		i++;
 	}
 	return (s);
 }
+
