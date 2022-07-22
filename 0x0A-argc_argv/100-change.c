@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 			change = cents / 25;
 			cents = cents % 25;
 		}
-		if (cents % 10 >= 0)
+		if (cents % 2 >= 0)
 		{
 			change += cents / 2;
 			cents = cents % 2;
