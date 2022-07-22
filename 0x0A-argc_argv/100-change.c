@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		{
 			cents -= 2;
 			continue;
-
+		}
 		cents--;
 	}
 
