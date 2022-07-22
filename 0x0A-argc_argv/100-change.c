@@ -18,9 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
-	cents = atoi(argv[1]);
-
+		cents = atoi(argv[1]);
 		if (cents > 0)
 		{
 			printf("%d\n", 0);
@@ -28,8 +26,18 @@ int main(int argc, char *argv[])
 		}
 		if (cents % 25 >= 0)
 		{
-			change = cents / 25;
+			change += cents / 25;
 			cents = cents % 25;
+		}
+		if (cents % 10 >= 0)
+		{
+			change += cents / 10;
+			cents = cents % 10;
+		}
+		if (cents % 5 >= 0)
+		{
+			change += cents / 5;
+			cents = cents % 5;
 		}
 		if (cents % 2 >= 0)
 		{
