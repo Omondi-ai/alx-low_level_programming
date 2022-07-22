@@ -5,7 +5,7 @@
  * @argv: An array of pointers to arguments
  * Return: Always 0
  */
-int main(int__attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	_putchar(argv[0]);
 
