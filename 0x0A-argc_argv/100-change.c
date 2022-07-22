@@ -50,6 +50,11 @@ int main(int argc, char *argv[])
 	{
 		return (printf("Error\n"), 1);
 	}
+	number = atoi(argv[1]);
+	if (number < 0)
+	{
+		return (printf("Error\n"), 1);
+	}
 	printf("%d\n", calculate_cents(number));
 	return (0);
 }
