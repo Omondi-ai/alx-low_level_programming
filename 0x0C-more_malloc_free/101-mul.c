@@ -87,7 +87,7 @@ int get_digit(char c)
  * Description: if mult contains a non digit,
  *		the function xists with a value of 98
  */
-void get_prod(cihar *prod, char *mult, int digit, int zeroes)
+void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 	int mult_len, num, tens = 0;
 
